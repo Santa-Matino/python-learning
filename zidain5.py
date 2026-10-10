@@ -155,7 +155,7 @@ for alien in aliens[:3]:
     if alien['color']=='green': #可能不全是绿色 所以if确定
         alien['color']='yellow'
         alien['points']=15
-    elif alien['color']=='yellow':
+    if alien['color']=='yellow':
         alien['color']='red'
         alien['points']=8
 for alien in aliens[:5]:
